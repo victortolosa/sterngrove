@@ -36,7 +36,7 @@ watch: {
         livereload: true,
     },
     scripts: {
-        files: ['js/*.js'],
+        files: ['js/vendor/*.js'],
         tasks: ['concat', 'uglify'],
         options: {
             spawn: false,
