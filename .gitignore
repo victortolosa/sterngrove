@@ -1,5 +1,5 @@
 # Build Files
 node_modules/
 node_modules
-img/
-.sass-cache/
+img
+.sass-cache
