@@ -116,11 +116,14 @@ ul.nav-list {
 	}
 }
 .about {
+	.content-wrap{
+		height: 490px;
+	}
 	position: relative;
 	display:block;
 	width:100%;
 	height:70%;
-	@include breakpoint(medium){
+	@include breakpoint(large){
 	height: 100%;
 	}
 
