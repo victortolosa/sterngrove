@@ -29,3 +29,18 @@ $(window).scroll(function(){
 		});
 	}
 });
+
+/* animated scroll */
+$('button').click(function(){
+	$('html,body').animate({
+		scrollTop: $(".about").offset().top
+	}, 800);
+});
+
+$(window).resize( function(){
+	if($(window).width() < 900){
+	$('.about-content  p').removeClass().addClass('full');
+	} else {
+	$('.about-content  p').addClass('half');	
+	}
+});

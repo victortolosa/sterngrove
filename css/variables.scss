@@ -3,3 +3,15 @@ $lightorange: #F5EBE2;
 $green: #8DB7A4;
 $lightgreen: #D1E2DB;
 $grey: #333; 
+
+@mixin breakpoint($point) {
+  @if $point == large {
+    @media (max-width: 1200px) { @content; }
+  }
+  @else if $point == medium {
+    @media (max-width: 900px) { @content; }
+  }
+  @else if $point == small {
+    @media (max-width: 600px)  { @content; }
+  }
+}
