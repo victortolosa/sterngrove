@@ -119,9 +119,11 @@ ul.nav-list {
 	position: relative;
 	display:block;
 	width:100%;
-	min-height:60%;
-	height:auto;
-	overflow: auto;
+	height:70%;
+	@include breakpoint(medium){
+	height: 100%;
+	}
+
 }
 .splash {
 	background: #ddd url('../img/splash.jpg') center;
@@ -231,6 +233,9 @@ ul.nav-list {
 	height: 70%;
 	color:#fff;
 	background-color: $orange;
+	.content-wrap{
+		height: 500px;
+	}
 }
 footer {
 	overflow:hidden;

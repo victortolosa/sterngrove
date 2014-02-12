@@ -26,7 +26,7 @@ sass: {
             style: 'compressed'
         },
         files: {
-            'css/build.css':'css/build.scss'
+            'css/build.css':'css/stack.scss'
         }
     } 
 },
