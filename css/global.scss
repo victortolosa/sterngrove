@@ -2,7 +2,7 @@
 body, html {
 	height: 100%;
 	width:100%;
-
+	border-top: solid 2px $orange;
 }
 h1,h2 { 
 	font-family: bebas, sans-serif; 
@@ -10,6 +10,13 @@ h1,h2 {
 }
 p {
 	font-family: montserrat, sans-serif;
+}
+a{
+	color:#fff;
+	text-decoration:none;
+	&:hover {
+		color:#ddd;
+	}
 }
 .container{
 	background-color:red;
@@ -111,23 +118,14 @@ ul.nav-list {
 	width:100%;
 	height:100%;
 	min-height:600px;
+	p {
+		font-family: 'Vollkorn', serif;
+	}
 	@include breakpoint(medium){
 		font-size:16px;
 	}
 }
-.about {
-	.content-wrap{
-		height: 490px;
-	}
-	position: relative;
-	display:block;
-	width:100%;
-	height:70%;
-	@include breakpoint(large){
-	height: 100%;
-	}
 
-}
 .splash {
 	background: #ddd url('../img/splash.jpg') center;
 	background-size: cover;
@@ -179,15 +177,20 @@ ul.nav-list {
 	margin: auto;
 	width:80%;
 	max-width:1200px;
-	height: 400px;
+	height: 500px;
 	@include breakpoint(medium){
 		width: 100%;
 	}
 	h1 {
+		display: block;
+		text-align:left;
 		font-size:50px;
-		text-align: center;
 		text-shadow:none;
-		padding: 60px;
+		padding: 20px;
+		width: 100%;
+		border-bottom: solid 2px #000;
+		margin: auto;
+		margin-bottom: 10px;
 	}
 	p {
 		font-size:1.5em;
@@ -197,6 +200,19 @@ ul.nav-list {
 	}
 }
 
+.about {
+	.content-wrap{
+		height: 300px;
+	}
+	position: relative;
+	display:block;
+	width:100%;
+	height:70%;
+	@include breakpoint(large){
+	height: 100%;
+	}
+
+}
 .performance {
 	height: 50%;
 	background: #ddd url('../img/performance.jpg') center bottom;
@@ -237,7 +253,10 @@ ul.nav-list {
 	color:#fff;
 	background-color: $orange;
 	.content-wrap{
-		height: 500px;
+		height: 400px;
+		h1 {
+			border-color: #fff;
+		}
 	}
 }
 footer {
