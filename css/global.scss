@@ -22,7 +22,7 @@ a{
 	background-color:red;
 	margin:0;padding:0;
 	height:100%;width:100%;
-	min-width:400px;
+	min-width:100px;
 }
 nav{
 	position: fixed;
@@ -190,7 +190,13 @@ ul.nav-list {
 		width: 100%;
 		border-bottom: solid 2px #000;
 		margin: auto;
+		margin-left:20px;
+		margin-right:20px;
 		margin-bottom: 10px;
+		padding-left:0;
+		@include breakpoint(medium){
+			width:90%;
+		}
 	}
 	p {
 		font-size:1.5em;
@@ -222,29 +228,19 @@ ul.nav-list {
 .learn-more{
 	height: 70%;
 	background-color:$green;
-	h1{color:#fff;}
-	p{
+	h1{
 		color:#fff;
-		line-height:400px;
-		display: inline-block;
-		height:200px;
-		&.music-icon{
-			background: url('../img/music.png') no-repeat center center;
-		}
-		&.tree-icon{
-			background: url('../img/tree.png') no-repeat center center;
-		}
-		&.art-icon{
-			background: url('../img/art.png') no-repeat center center;
-		}
-		&:hover{
-			opacity: .5;
-			cursor: pointer;
-		}
+		border-color: #fff;
 	}
-	& .learn-more-content{
-		height: 500px;
-		text-align:center;
+	p, h1 { color:#fff; min-width:300px;}
+	.content-wrap{
+		height: 300px;
+		@include breakpoint(medium){
+			height: 350px; 
+		}
+		@include breakpoint(small){
+			height: 450px; 
+		}
 	}
 }
 
@@ -252,10 +248,17 @@ ul.nav-list {
 	height: 70%;
 	color:#fff;
 	background-color: $orange;
+	p, h1 { min-width:300px;}
 	.content-wrap{
-		height: 400px;
+		height: 300px;
 		h1 {
 			border-color: #fff;
+		}
+		@include breakpoint(medium){
+			height: 350px; 
+		}
+		@include breakpoint(small){
+			height: 550px; 
 		}
 	}
 }
