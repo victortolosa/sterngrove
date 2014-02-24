@@ -35,7 +35,12 @@ nav{
 .navbg{
 	height:100px;
 	background-color: rgba(0,0,0,.6);
-	transition: background-color 1s;
+	transition: all 600ms;
+
+}
+.navopen{
+	height:300px;
+	transition: all 600ms;
 }
 .logo{
 	margin:20px;
@@ -93,9 +98,15 @@ ul.nav-list {
 	padding-right: 35px;
 	margin-top:38px;
 	@include breakpoint(medium){
+		display:none;
+		position: absolute;
+		left:0; right:0;
+		margin: 0 auto;
+		text-align:center;
 		width:200px;
-		line-height:20px;
-		font-size: 20px;
+		line-height:30px;
+		font-size: 30px;
+		
 	}
 	li{
 	color:#fff;
@@ -107,10 +118,7 @@ ul.nav-list {
 	text-shadow: 0px 0px 5px rgba(0,0,0,.5);
 	}
 }
-.nav-list-bp{
-	width:200px;
-	line-height:20px;
-}
+
 /* CONTENT */
 .cover {
 	position: relative;
@@ -292,4 +300,17 @@ footer {
 			padding:0;
 		}
 	}
+}
+
+span.navicon{
+	position: absolute;
+	right:0;top:0;
+	display: inline-block;
+	display: none;
+	color:#fff;
+	float:right;
+	font-size: 40px;
+	padding:30px;
+	-webkit-transform: rotate(90deg);
+	cursor:pointer;
 }

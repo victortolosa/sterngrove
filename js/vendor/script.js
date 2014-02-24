@@ -32,10 +32,24 @@ $('button').click(function(){
 	}, 800);
 });
 
+if( $(window).width() < 900 ){
+	$('.navicon').show();
+}
+
 $(window).resize( function(){
 	if($(window).width() < 900){
 	$('.about-content  p').removeClass().addClass('full');
+	$('.navicon').fadeIn();
+	$('.nav-list').hide();
 	} else {
-	$('.about-content  p').addClass('half');	
+	$('.about-content  p').addClass('half');
+	$('.navicon').fadeOut();
+	$('.nav-list').show();
+	$('.navbg').removeClass("navopen");
 	}
+});
+
+$('.navicon').on("click",function(){
+	$('.nav-list').fadeToggle();
+	$('.navbg').toggleClass("navopen");
 });
