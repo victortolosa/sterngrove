@@ -332,4 +332,8 @@ i{
 	font-size:80px;
 	letter-spacing: 60px;
 	padding-top: 30px;
+	@include breakpoint(medium){
+		font-size: 50px;
+		letter-spacing:20px;
+	}
 }
