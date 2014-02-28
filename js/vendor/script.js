@@ -38,11 +38,11 @@ if( $(window).width() < 900 ){
 
 $(window).resize( function(){
 	if($(window).width() < 900){
-	$('.about-content  p').removeClass().addClass('full');
+	$('.about-content  p').removeClass('half').addClass('full');
 	$('.navicon').fadeIn();
 	$('.nav-list').hide();
 	} else {
-	$('.about-content  p').addClass('half');
+	$('.about-content  p').removeClass('full').addClass('half');
 	$('.navicon').fadeOut();
 	$('.nav-list').show();
 	$('.navbg').removeClass("navopen");

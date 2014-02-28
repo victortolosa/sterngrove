@@ -1,4 +1,8 @@
-* { box-sizing: border-box; }
+* { 
+box-sizing: border-box;
+-moz-box-sizing: border-box;
+-moz-box-sizing: border-box;
+ }
 body, html {
 	height: 100%;
 	width:100%;
@@ -295,6 +299,9 @@ footer {
 			margin-left:0px;
 			line-height:20px;
 		}
+		i {
+			font-size:40px;
+		}
 	}
 	ul{
 
@@ -318,6 +325,8 @@ span.navicon{
 	float:right;
 	font-size: 40px;
 	padding:30px;
+	transform: rotate(90deg);
 	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
 	cursor:pointer;
 }
