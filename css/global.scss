@@ -299,9 +299,7 @@ footer {
 			margin-left:0px;
 			line-height:20px;
 		}
-		i {
-			font-size:40px;
-		}
+
 	}
 	ul{
 
@@ -329,4 +327,7 @@ span.navicon{
 	-webkit-transform: rotate(90deg);
 	-moz-transform: rotate(90deg);
 	cursor:pointer;
+}
+i{
+	font-size:40px;
 }
