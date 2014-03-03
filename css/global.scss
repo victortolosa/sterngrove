@@ -10,7 +10,7 @@ body, html {
 }
 h1,h2 { 
 	font-family: bebas, sans-serif; 
-	text-shadow: 0px 0px 5px rgba(0,0,0,.6);
+	/*text-shadow: 0px 0px 5px rgba(0,0,0,.6); */
 }
 p {
 	font-family: Vollkorn, serif;
@@ -54,10 +54,8 @@ nav{
 	width:70px;
 	background: url('../img/logo.png') center center;
 	background-size: cover;
-	@include breakpoint(medium){
-		height:60px;
-		width:30px;
-	}
+	height:60px;
+	width:30px;
 }
 .logo-bp{
 	height:60px;
@@ -65,16 +63,13 @@ nav{
 }
 ul.logo-type{
 	font-family:bebas;
-	width:100px;
 	float:left;
 	line-height:32px;
 	margin-left:0;
 	margin-top:30px;
 	padding-left:0;
+	width:300px;
 
-	@include breakpoint(medium){
-		width:300px;
-	}
 	@media (max-width:400px){
 		display:none;
 	}
@@ -84,13 +79,12 @@ ul.logo-type{
 		font-weight:normal;
 		font-size:40px;
 		color:#fff;
-		text-shadow: 0px 0px 5px rgba(0,0,0,.5);
-		@include breakpoint(medium){
-			font-size: 26px;
-			float: left;
-			padding-right: 5px;
-			padding-top: 5px;
-		}
+		/* text-shadow: 0px 0px 5px rgba(0,0,0,.5); */
+		font-size: 26px;
+		float: left;
+		padding-right: 5px;
+		padding-top: 5px;
+		
 	}
 	
 }
@@ -119,7 +113,7 @@ ul.nav-list {
 	padding-top:0;
 	margin-top:0;
 	padding-left: 20px;
-	text-shadow: 0px 0px 5px rgba(0,0,0,.5);
+	/*text-shadow: 0px 0px 5px rgba(0,0,0,.5);*/
 	}
 }
 
@@ -139,7 +133,7 @@ ul.nav-list {
 }
 
 .splash {
-	background: #ddd url('../img/splash.jpg') center;
+	background: #ddd url('../img/stern-grove-background.png') center;
 	background-size: cover;
 	button {
 		display: block;
@@ -160,14 +154,14 @@ ul.nav-list {
 		}
 	}
 	.megatext{
-		font-size:50px;
+		font-size:70px;
 		color:#fff;
 		width:100%;
 		text-align:center;
 		line-height:60px;
 		display: block;
 		position: absolute;
-		bottom:20%;
+		top: 30%;
 		span {
 			font-size: 83px;
 		}
